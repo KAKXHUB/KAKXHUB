@@ -1,10 +1,28 @@
-- 👋 Hi, I’m @KAKXHUB
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
 
-<!---
-KAKXHUB/KAKXHUB is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+local win = Flux:Window("PREVIEW", "Baseplate", Color3.fromRGB(255, 110, 48), Enum.KeyCode.LeftControl)
+local tab = win:Tab("Peet God", "http://www.roblox.com/asset/?id=6023426915")
+tab:Button("Kill all", "This function may not work sometimes and you can get banned.", function()
+Flux:Notification("Killed all players successfully!", "Alright")
+end)
+tab:Label("This is just a label.")
+tab:Line()
+tab:Toggle("Auto-Farm Coins", "Automatically collects coins for you!", function(t)
+print(t)
+end)
+tab:Slider("Walkspeed", "Makes your faster.", 0, 100,16,function(t)
+print(t)
+end)
+tab:Dropdown("Part to aim at", {"Torso","Head","Penis"}, function(t)
+print(t)
+end)
+tab:Colorpicker("ESP Color", Color3.fromRGB(255,1,1), function(t)
+print(t)
+end)
+tab:Textbox("Gun Power", "This textbox changes your gun power, so you can kill everyone faster and easier.", true, function(t)
+print(t)
+end)
+tab:Bind("Kill Bind", Enum.KeyCode.Q, function()
+print("Killed a random person!")
+end)
+win:Tab("you kak", "http://www.roblox.com/asset/?id=6022668888")
